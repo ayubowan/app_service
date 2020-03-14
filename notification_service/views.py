@@ -12,7 +12,9 @@ def get_latest_messages(request, limit, offset):
             "title": msg.title,
             "message": msg.message,
             "broadcast_time": msg.broadcast_time.timestamp(),
-            "is_valid": msg.is_valid
+            "is_valid": msg.is_valid,
+            "type": msg.type,
+            "data_type": msg.data_type,
         } for msg in messages]
         , safe=False
     )

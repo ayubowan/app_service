@@ -11,12 +11,21 @@ class Message(models.Model):
         INFO = 'INF', _('Info')
         WARNING = 'WAR', _('Warning')
 
+    class DataType(models.TextChoices):
+        TEXT = 'TEXT', _('Text')
+        DATA = 'DATA', _('Data')
+
     title = models.CharField(max_length=80)
     message = models.TextField()
     type = models.CharField(
         max_length=3,
         choices=MessageType.choices,
         default=MessageType.INFO,
+    )
+    data_type = models.CharField(
+        max_length=5,
+        choices=DataType.choices,
+        default=DataType.TEXT,
     )
     broadcast_time = models.DateTimeField(default=now)
     is_valid = models.BooleanField(default=True)
