@@ -1,5 +1,9 @@
 # COVID-19  app_service
 
+Are you ready to fight back with the covid-19 outbreak?
+COVID-19 is going all over the world without giving a clue how to defeat it. This is an epidemic situation according to the WHO
+
+This is how we are going to defeat this.
 [Read more details about project Idea ](https://medium.com/@dewmalnilanka/covid-19-it-is-time-to-pres-ctrl-d-b5255245db92)
 
 
